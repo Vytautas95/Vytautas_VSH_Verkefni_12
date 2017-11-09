@@ -3,6 +3,9 @@ import pymysql
 from bottle import *
 import os
 
+@route('/')
+def redi():
+    redirect('/leita')
 @route('/leita')
 def leit():
     return '''
